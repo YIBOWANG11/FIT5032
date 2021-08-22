@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<script>
+function preferedBrowser() {
+prefer = document.forms[0].browsers.value;
+alert("You prefer browsing internet with " + prefer);
+}
+</script>
+<form>
+    FIT5032 Studio 5 | Page 4 of 8
+    Choose which browser you prefer:
+    <select id="browsers" onchange="preferedBrowser()">
+        <option value="Chrome">Chrome</option>
+        <option value="Internet Explorer">Internet Explorer</option>
+        <option value="Firefox">Firefox</option>
+    </select>
+</form>

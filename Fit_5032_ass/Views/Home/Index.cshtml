@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    <h1> Welcome admin </h1> @User.Identity.Name
+    <h2> Now you can choose functions </h2>
+}
+else
+{
+    <h3> Welcome guest </h3>
+    <h4> Please login as an admin then use this page </h4>
+}
+
+<picture>
+    <source srcset="" media="(max-width: 600px)">
+    <source srcset="">
+    <img src="~/images/images1.jpg" alt="welcome" style="width:auto;">
+</picture>
+
